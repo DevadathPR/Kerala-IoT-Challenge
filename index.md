@@ -119,7 +119,7 @@ digitalWrite(redled, LOW);// turn off red LED
 
 ### output
 
-![Exp2Out](content/TRAFFIC.mp4?raw=true "Models")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vibTpPs5KSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Experiment no 3
 
@@ -167,7 +167,7 @@ void loop()
 ```
 ### output
 
-![Exp3Out](content/CHASE.mp4?raw=true "Models")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pneRVem7jHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Experiment no 4
 
@@ -212,7 +212,7 @@ else
 
 ### output
 
-![Exp4Out](content/SWBU.mp4?raw=true "Models")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jcgHOgFfgmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Experiment 5
 ### Buzzer
@@ -301,7 +301,7 @@ for(val=0; val<255; val++)
 }
 ```
 ### output
-![Exp6Out](content/6GB.mp4?raw=true "Models")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uxBNo-lSBf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Experiment 7
 
@@ -343,7 +343,7 @@ delay(10);// wait for 0.01
 ### output
 
 
-![Exp7Out](content/ NIGH.mp4?raw=true "Models")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/23LN822j36s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Experiment 8
 
@@ -389,7 +389,7 @@ void loop()
 ```
 ### output
 
-![Exp8Out](content/FLAM.mp4?raw=true "Models")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j2_msI2iJns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### output
 
