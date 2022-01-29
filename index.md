@@ -62,7 +62,11 @@ delay(1000); // wait for a second
 
 ### output
 
-![Exp1Out](content/WORLD.mp4?raw=true "Models")
+
+https://user-images.githubusercontent.com/51152887/151663465-340759ba-11b5-4182-bf47-5e07bd8bf561.mp4
+
+
+
 ## Experiment 2
 
 ## TRAFFIC LIGHT 
