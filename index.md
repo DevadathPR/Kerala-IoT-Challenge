@@ -169,9 +169,9 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pneRVem7jHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Experiment no 4
+## Experiment no 4
 
-### BUTTON CONTROLL LED
+## BUTTON CONTROLL LED
 
 ### Components required
 
@@ -214,8 +214,8 @@ else
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jcgHOgFfgmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Experiment 5
-### Buzzer
+## Experiment 5
+## Buzzer
 
 ### Components required
 
@@ -250,9 +250,9 @@ digitalWrite(buzzer, HIGH); // produce sound
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xF5hfGGBwbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Experiment  6
+## Experiment  6
 
-###  RGB LED
+##  RGB LED
 
 ### Components required
  -  Arduino uno
@@ -302,9 +302,9 @@ for(val=0; val<255; val++)
 ### output
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uxBNo-lSBf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Experiment 7
+## Experiment 7
 
-### LDR LIGHT Sensor
+## LDR LIGHT Sensor
 
 ### Components required
 
@@ -344,9 +344,9 @@ delay(10);// wait for 0.01
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/23LN822j36s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Experiment 8
+## Experiment 8
 
-### FLAME Sensor
+## FLAME Sensor
 
 ### Components required
 
@@ -361,7 +361,7 @@ delay(10);// wait for 0.01
 
  ![Exp8CD](content/FLAME.png?raw=true "Models")
 
- ### code
+### code
  ```C
  int flame=5;// select analog pin 5 for the sensor
 int Beep=6;// select digital pin 6 for the buzzer
@@ -392,9 +392,9 @@ void loop()
 
 ### output
 
-### Experiment 9
+## Experiment 9
 
-### LM35 Temperature sensor
+## LM35 Temperature sensor
 
 ### Components required
 
@@ -533,9 +533,9 @@ irrecv.resume(); // Receive the next value
 ```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NNPvRUwSq5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Experiment 11
+## Experiment 11
 
-### Potentionmeter analogvalue Reading
+## Potentionmeter analogvalue Reading
 
 ### components required
 
@@ -575,9 +575,9 @@ Serial.println(val);// display val’s value
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WQCxHPlNask" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### Experiment 12
+## Experiment 12
 
-### 7 SEGMENT DISPLAY
+## 7 SEGMENT DISPLAY
 
 ### components required
 
@@ -745,9 +745,9 @@ delay(1000); // wait for 1s
 ![image](https://user-images.githubusercontent.com/51152887/151688624-75e706e9-4ae7-4f9a-9af8-a629ab119c5c.png)
 
 
-### Activity 1
+## Activity 1
 
-### Automatic night lamp using LDR
+## Automatic night lamp using LDR
 
 ### components required
 
@@ -790,9 +790,9 @@ if(value<20)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F1Q8d6cogkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Activity 1
+## Activity 2
 
-### Automatic night lamp using LDR
+## Digital dice
 
 ### components required
 
@@ -807,7 +807,6 @@ if(value<20)
 
 ### Circuit diagram
 ![image](https://user-images.githubusercontent.com/51152887/151689314-dd85afec-b75c-4cbf-8847-14020d4fc522.png)
-
 
 ### code
 
