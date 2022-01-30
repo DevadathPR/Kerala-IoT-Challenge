@@ -745,5 +745,240 @@ delay(1000); // wait for 1s
 ![image](https://user-images.githubusercontent.com/51152887/151688624-75e706e9-4ae7-4f9a-9af8-a629ab119c5c.png)
 
 
+### Activity 1
 
+### Automatic night lamp using LDR
+
+### components required
+
+ - Arduino uno*1
+ - LDR*1
+ - Breadboard*!
+ - jumper wires
+ - usb cable*1
+ - LED*1
+
+### Circuit diagram
+ ![image](https://user-images.githubusercontent.com/51152887/151689148-12f31077-211e-466c-b38d-20ae948de59a.png)
+
+
+ ### code
+ ```C 
+int ldr=A0;//Set A0(Analog Input) for LDR.
+int value=0;
+void setup() {
+Serial.begin(9600);
+pinMode(3,OUTPUT);
+}
+
+void loop() {
+value=analogRead(ldr);//Reads the Value of LDR(light).
+Serial.println("LDR value is :");//Prints the value of LDR to Serial Monitor.
+Serial.println(value);
+if(value<20)
+  {
+    digitalWrite(3,HIGH);//Makes the LED glow in Dark.
+  }
+  else
+  {
+    digitalWrite(3,LOW);//Turns the LED OFF in Light.
+  }
+}
+```
+
+### output
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F1Q8d6cogkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Activity 1
+
+### Automatic night lamp using LDR
+
+### components required
+
+ - Arduino uno*1
+ - 7 segment diplay*1
+ - Breadboard*!
+ - jumper wires
+ - usb cable*1
+ - push button*1
+ - 330 ohm resistors*8
+ - 10k ohm resistors*1
+
+### Circuit diagram
+![image](https://user-images.githubusercontent.com/51152887/151689314-dd85afec-b75c-4cbf-8847-14020d4fc522.png)
+
+
+ ### code
+ ```C 
+int a=4;// set digital pin 7 for segment a
+int b=3;// set digital pin 6 for segment b
+int c=5;// set digital pin 4 for segment c
+int d=8;// set digital pin 10 for segment d
+int e=7;// set digital pin 11 for segment e
+int f=9;// set digital pin 12 for segment f
+int g=10;// set digital pin 13 for segment g
+int dp=6;// set digital pin 3 for segment dp
+int randnum = 0;
+
+void digital_0(void) // display number 0
+{
+
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(g,LOW);
+digitalWrite(dp,LOW);
+}
+void digital_1(void) // display number 1
+{
+digitalWrite(a,LOW);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,LOW);
+digitalWrite(e,LOW);
+digitalWrite(f,LOW);
+digitalWrite(g,LOW);
+digitalWrite(dp,LOW);
+}
+
+void digital_2(void) // display number 2
+{
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,LOW);
+digitalWrite(d,HIGH);
+digitalWrite(e,HIGH);
+digitalWrite(f,LOW);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+}
+void digital_3(void) // display number 3
+{digitalWrite(g,HIGH);
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(f,LOW);
+digitalWrite(e,LOW);
+}
+void digital_4(void) // display number 4
+{digitalWrite(c,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(a,LOW);
+digitalWrite(e,LOW);
+digitalWrite(d,LOW);
+}
+void digital_5(void) // display number 5
+{
+
+digitalWrite(a,HIGH);
+digitalWrite(b, LOW);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e, LOW);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+}
+void digital_6(void) // display number 6
+{
+digitalWrite(a,HIGH);
+digitalWrite(b,LOW);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+}
+void digital_7(void) // display number 7
+{
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,LOW);
+digitalWrite(e,LOW);
+digitalWrite(f,LOW);
+digitalWrite(g,LOW);
+digitalWrite(dp,LOW);
+}
+void digital_8(void) // display number 8
+{
+
+
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+}
+void digital_9(void) // display number 9
+{
+
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d, LOW);
+digitalWrite(e, LOW);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+}
+void setup()
+{
+int i;// set variable
+for(i=4;i<=11;i++)
+pinMode(i,OUTPUT);// set pin 4-11as “output”
+pinMode(2, INPUT);
+}
+void loop()
+{
+  while(1)
+  {
+  if (digitalRead(2)== HIGH)
+  {
+    delay(100);
+    randnum = random(6);
+    
+    if (randnum == 1)
+      {digital_1();}// display number 1
+    
+
+    else if (randnum == 2)
+      {digital_2();}// display number 2
+    
+
+    else if (randnum == 3)
+      digital_3();// display number 3
+    
+
+    else if (randnum == 4)
+      digital_4();// display number 4
+    
+
+    else if (randnum == 5)
+      digital_5();// display number 5
+    
+
+    else if (randnum == 6)
+     {digital_6();}// display number 6
+    
+  }
+}
+}
+```
+
+### output
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dejaennQURA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
