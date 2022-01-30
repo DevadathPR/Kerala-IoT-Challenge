@@ -248,8 +248,7 @@ digitalWrite(buzzer, HIGH); // produce sound
 ### output
 
 
-![Exp5Out](content/BUZZER.mp4?raw=true "Models")
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xF5hfGGBwbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Experiment  6
 
@@ -434,7 +433,7 @@ delay(500);// wait for 0.5 second
 ### output
 
 
-![Exp9Out](content/TEMP.mp4?raw=true "Models")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XVpzWmQa46I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Experiment 10
 
@@ -459,9 +458,78 @@ delay(500);// wait for 0.5 second
 
 ### code
 ```C
+#include <IRremote.h>
+int RECV_PIN = 8;
+int LED1 = 2;
+int LED2 = 3;
+int LED3 = 4;
+int LED4 = 5;
+int LED5 = 6;
+int LED6 = 7;
+long on1  = 14498;
+long off1 = 14500;
+long on2 = 10407;
+long off2 = 14504;
+long on3 = 10411;
+long off3 = 14509;
+long on4 = 10414;
+long off4 = 14481;
+long on5 = 10386;
+long off5 = 0x00FF42BD;
+long on6 = 0x00FF4AB5;
+long off6 = 0x00FF52AD;
+IRrecv irrecv(RECV_PIN);
+decode_results results;
 
-
-
+void setup()
+ {
+  pinMode(RECV_PIN, INPUT);   
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+  pinMode(LED5, OUTPUT);
+  pinMode(LED6, OUTPUT);  
+  pinMode(13, OUTPUT);
+  Serial.begin(9600);
+   irrecv.enableIRIn(); // Start the receiver
+ }
+int on = 0;
+unsigned long last = millis();
+void loop() 
+{
+  if (irrecv.decode(&results)) 
+   {
+    Serial.println(results.value);
+    
+    if (results.value == on1 )
+       digitalWrite(LED1, HIGH);
+    if (results.value == off1 )
+       digitalWrite(LED1, LOW); 
+    if (results.value == on2 )
+       digitalWrite(LED2, HIGH);
+    if (results.value == off2 )
+       digitalWrite(LED2, LOW); 
+    if (results.value == on3 )
+       digitalWrite(LED3, HIGH);
+    if (results.value == off3 )
+       digitalWrite(LED3, LOW);
+    if (results.value == on4 )
+       digitalWrite(LED4, HIGH);
+    if (results.value == off4 )
+       digitalWrite(LED4, LOW); 
+    if (results.value == on5 )
+       digitalWrite(LED5, HIGH);
+    if (results.value == off5 )
+       digitalWrite(LED5, LOW); 
+    if (results.value == on6 )
+       digitalWrite(LED6, HIGH);
+    if (results.value == off6 )
+       digitalWrite(LED6, LOW);        
+    last = millis();      
+irrecv.resume(); // Receive the next value
+  }
+}
 ```
 ![Exp10Out](content/3in1.jpg?raw=true "Models")
 
@@ -506,7 +574,7 @@ Serial.println(val);// display val’s value
 
 ### output
 
-![Exp11Out](content/POTENT.mp4?raw=true "Models")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WQCxHPlNask" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Experiment 12
@@ -676,7 +744,7 @@ delay(1000); // wait for 1s
 ### output
 
 
-![Exp11Out](content/PLAYD.mp4?raw=true "Models")
+![image](https://user-images.githubusercontent.com/51152887/151688624-75e706e9-4ae7-4f9a-9af8-a629ab119c5c.png)
 
 
 
