@@ -453,7 +453,7 @@ delay(500);// wait for 0.5 second
 ### Circuit diagram
 
 
- ![Exp10CD](content/IRSS.png?raw=true "Models")
+ ![Exp10CD](content/IRSD.png?raw=true "Models")
 
 
 ### code
