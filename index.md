@@ -761,9 +761,9 @@ delay(1000); // wait for 1s
 ### Circuit diagram
  ![image](https://user-images.githubusercontent.com/51152887/151689148-12f31077-211e-466c-b38d-20ae948de59a.png)
 
+### code
 
- ### code
- ```C 
+```C 
 int ldr=A0;//Set A0(Analog Input) for LDR.
 int value=0;
 void setup() {
@@ -809,8 +809,9 @@ if(value<20)
 ![image](https://user-images.githubusercontent.com/51152887/151689314-dd85afec-b75c-4cbf-8847-14020d4fc522.png)
 
 
- ### code
- ```C 
+### code
+
+```C 
 int a=4;// set digital pin 7 for segment a
 int b=3;// set digital pin 6 for segment b
 int c=5;// set digital pin 4 for segment c
@@ -980,5 +981,6 @@ void loop()
 ```
 
 ### output
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dejaennQURA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
