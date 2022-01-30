@@ -453,7 +453,7 @@ delay(500);// wait for 0.5 second
 ### Circuit diagram
 
 
- ![Exp10CD](content/IRS.png?raw=true "Models")
+ ![Exp10CD](content/IRSS.png?raw=true "Models")
 
 
 ### code
@@ -531,9 +531,7 @@ irrecv.resume(); // Receive the next value
   }
 }
 ```
-![Exp10Out](content/3in1.jpg?raw=true "Models")
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NNPvRUwSq5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Experiment 11
 
