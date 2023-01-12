@@ -1,5 +1,6 @@
+##Github pages web deployment 
 
-[##Github-pages web deployment](https://devalopr.github.io/Kerala-IoT-Challenge/)
+[LINK](https://devalopr.github.io/Kerala-IoT-Challenge/)
 
 ## Contents
 
